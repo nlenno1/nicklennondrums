@@ -1,0 +1,1224 @@
+body {
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	background-color: #5C93AE;
+	font-family: 'Overpass', sans-serif;
+	color: #000;
+}
+
+#non-button {
+	background: none;
+	border: none;
+	margin: 0;
+}
+
+
+/*----------------------------- Fonts */
+
+h1 {
+	font-family: 'PT Sans', sans-serif;
+}
+
+h2 h3 h4 h5 {
+	font-family: 'Roboto Condensed', sans-serif;
+}
+
+
+/*----------------------------- Colours */
+
+header .current-page {
+	color: #5C93AE;
+}
+
+.icon-blue {
+	color: #1E5671;
+}
+
+.colour-white {
+	color: #fafafa;
+}
+
+.colour-black {
+	color: #000;
+}
+
+
+/*----------------------------- NavBar */
+
+.navbar {
+	background-color: #0B0D10;
+	height: 70px;
+	margin: 0;
+	padding: 0.3rem 0.5rem 0.25rem 0.5rem;
+}
+
+.navbar-nav {
+	flex-direction: row;
+	width: 55vw;
+	padding-top: 5px;
+}
+
+.logo-new {
+	width: 35vw;
+	height: 100%;
+	margin: 0;
+	max-height: 44px;
+	max-width: 120px;
+}
+
+.navbar-brand {
+	margin: 0;
+	padding: 0;
+}
+
+.nav-item {
+	width: 45px;
+	height: 100%;
+	padding: 0;
+	margin: 0 auto;
+	font-size: 0.7rem;
+	display: block;
+	text-align: center;
+}
+
+.nav-link {
+	padding: 0;
+	bottom: 0;
+	color: #5C93AE;
+}
+
+.nav-link:hover {
+	color: #fafafa;
+}
+
+.nav-link i {
+	font-size: 1.6rem;
+	display: block;
+}
+
+.active a {
+	color: #ffdfba;
+}
+
+
+/*----------------------------- Footer */
+
+footer {
+	color: #fafafa;
+	background-color: #0D3B51;
+}
+
+footer p {
+	font-size: 12px;
+}
+
+footer h5 {
+	font-size: 18px;
+}
+
+.social-links {
+	padding: 0.5rem;
+	text-align: center;
+	margin: 0;
+}
+
+.social-links li {
+	display: inline-block;
+	font-size: 1.6rem;
+	padding: 0 1rem;
+}
+
+.social-links a {
+	color: #fafafa;
+	text-decoration: none;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.social-links a:hover {
+	color: #5C93AE;
+}
+
+.get-in-touch,
+.mailing-list {
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.get-in-touch {
+	padding-top: 1rem;
+}
+
+.email-link {
+	text-decoration: none;
+	font-size: 1rem;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.email-link:hover {
+	color: #5C93AE;
+}
+
+.copyright {
+	text-align: center;
+}
+
+.site-map {
+	padding-left: 4rem;
+}
+
+.site-map>h5 {
+	margin: 0;
+	padding-top: 2rem;
+}
+
+.map-list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-size: 12px;
+}
+
+.map-list a {
+	text-decoration: none;
+	color: #fafafa;
+}
+
+.map-list li {
+	border-right: 1px solid #fafafa;
+	margin-right: 2rem;
+}
+
+.email-input {
+	display: inline-block;
+	line-height: 1.5;
+	text-decoration: none;
+	vertical-align: middle;
+	padding: .375rem .75rem;
+	font-size: 1rem;
+	border-radius: .25rem;
+	width: 60%;
+	min-width: 200px;
+}
+
+.submit {
+	background-color: #FFDFBA;
+}
+
+.email-input,
+.submit {
+	margin: 0.2rem 0;
+}
+
+
+/*----------------------------- Contact Modal */
+
+.modal-content {
+	background-color: rgba(196, 196, 196, 1);
+}
+
+.modal-title {
+	margin-bottom: -5px;
+}
+
+.model-body-padding {
+	padding: 2rem 1rem 2.2rem;
+}
+
+.modal-header {
+	background-color: #5C93AE;
+	border-bottom: 1px solid #000;
+}
+
+.model-break {
+	width: 75px;
+	margin: 1.5rem auto;
+	color: #000;
+}
+
+#modal-social-links {
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+#modal-email-button {
+	background-color: #ffdfba;
+	color: #000;
+	border-color: #ffdfba;
+	border-radius: 10px;
+	box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 40px 0 rgb(0 0 0 / 19%);
+}
+
+
+/*----------------------------- Hero Image */
+
+#hero-image {
+	height: 320px;
+	background: url("images/nick-lennon-hero-image.jpg") #1E5671 no-repeat center center;
+	background-size: cover;
+	position: relative;
+}
+
+.hero-image-container {
+	padding: 0;
+}
+
+#hero-overlay {
+	height: 320px;
+	background-color: rgba(0, 0, 0, 0.2);
+}
+
+#title-overlay,
+#subtitle-overlay {
+	color: #fafafa;
+	position: absolute;
+}
+
+#title-overlay {
+	top: 15%;
+	right: 40%;
+}
+
+#title-overlay h1 {
+	margin: 0;
+	font-size: 1.6rem;
+}
+
+#subtitle-overlay {
+	color: #000;
+	padding: 8px;
+	border-radius: 10px;
+	background-color: rgba(196, 196, 196, 0.6);
+	bottom: 26%;
+	left: 53%;
+}
+
+#subtitle-overlay h2 {
+	font-size: 0.9rem;
+	margin: 0;
+	text-align: center;
+}
+
+
+/*----------------------------- What I Do */
+
+.what-i-do-container {
+	list-style-type: none;
+	display: flex;
+	margin-bottom: 0;
+	padding: 3vw 5vw;
+	height: 100%;
+}
+
+.what-i-do-container li {
+	text-align: center;
+}
+
+.what-i-do-button {
+	height: 85px;
+	width: 95%;
+	max-width: 85px;
+	margin: 25px auto;
+	padding: 2px;
+	padding-top: 15px;
+	border-radius: 10px;
+	background-color: #c4c4c4;
+	border: 2px solid #c4c4c4;
+	font-size: 0.7rem;
+	color: #1E5671;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.what-i-do-button i {
+	font-size: 1.6rem;
+	display: block;
+}
+
+.what-i-do-button p {
+	margin: 0;
+	padding-top: 0.5rem;
+}
+
+.lessons-button {
+	padding-top: 5px;
+}
+
+.what-i-do-button:hover {
+	color: #0D3B51;
+	background-color: #5C93AE;
+}
+
+
+/*---------------------------------------Gallery Section */
+
+#gallery {
+	padding: 12px;
+	height: 650px;
+}
+
+#gallery .col {
+	max-height: 100%;
+}
+
+.gallery-container {
+	height: 100%;
+	padding: 0 16px 64px 16px;
+	text-align: center;
+}
+
+.gallery-container h2 {
+	margin: 0 auto;
+	margin-bottom: 3vw;
+	margin-top: 1vw;
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	width: 100%;
+	max-width: 380px;
+	background-color: #ffdfba;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 40px 0 rgb(0 0 0 / 19%);
+}
+
+.gallery-container-inner {
+	height: 100%;
+	width: 100%;
+	background-color: #FFDFBA;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.img-1,
+.img-2 {
+	width: 100%;
+	object-fit: cover;
+}
+
+.img-1 {
+	height: 28.57%;
+}
+
+.img-2 {
+	height: 42.86%;
+}
+
+.tl-corner {
+	border-radius: 10px 0 0 0;
+}
+
+.tr-corner {
+	border-radius: 0 10px 0 0;
+}
+
+.br-corner {
+	border-radius: 0 0 10px 0;
+}
+
+.bl-corner {
+	border-radius: 0 0 0 10px;
+}
+
+
+/*---------------------------------------Upcoming Performances Section */
+
+#upcoming-performances-section {
+	height: 100%;
+	padding: 40px 0;
+	background: url("images/performance-background.jpg") #1E5671 no-repeat center center fixed;
+	background-size: cover;
+}
+
+#upcoming-performances-section h2 {
+	margin: 0 auto;
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	width: 90%;
+	max-width: 380px;
+	background-color: #ffdfba;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 40px 0 rgb(0 0 0 / 19%);
+}
+
+.performance-button {
+	width: 90%;
+	max-width: 350px;
+	height: 75px;
+	background-color: #FFDFBA;
+	margin: 20px auto;
+	border-radius: 20px;
+}
+
+.performance-button-left {
+	text-align: center;
+	padding-top: 5px;
+	line-height: 75px;
+	font-size: 50px;
+	border-radius: 20px 0 0 20px;
+}
+
+.performance-button-center {
+	padding-top: 1vw;
+	text-align: center;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.performance-button-center h4 {
+	font-size: 15px;
+}
+
+.performance-button-center p {
+	font-size: 10px;
+}
+
+.performance-button-right {
+	text-align: center;
+	line-height: 75px;
+	border-radius: 0 20px 20px 0;
+	cursor: pointer;
+	text-decoration: none;
+	color: #000;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+
+/*---------------------------------------Live Performance Video Section */
+
+#live-performance-section {
+	padding: 3rem 1rem;
+}
+
+#live-performance-section h2 {
+	margin: 0 auto;
+	margin-top: 1vw;
+	margin-bottom: 3vw;
+	padding: 10px;
+	font-size: 25px;
+	text-align: center;
+	width: 100%;
+	max-width: 380px;
+	background-color: #ffdfba;
+	border-radius: 20px;
+	box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 40px 0 rgb(0 0 0 / 19%);
+}
+
+.video-container {
+	padding: 30px 0;
+}
+
+.live-performance-iframe {
+	border: 0;
+	overflow: hidden;
+	width: 80vw;
+	height: 45vw;
+	display: block;
+	margin: 0 auto;
+	max-height: 540px;
+	max-width: 960px;
+}
+
+
+/*--------------------------------------- About Me Page */
+
+
+/*--------------------------------------- Biography Section */
+
+.profile-picture {
+	height: 300px;
+	width: 100%;
+	margin-bottom: 2rem;
+	border-radius: 20px;
+	background-color: #0D3B51;
+	object-position: top;
+	object-fit: cover;
+	box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.biography-text {
+	height: 100%;
+}
+
+.about-me-icon {
+	font-size: 20px;
+	margin: 0 20px;
+}
+
+.biography-text h2 {
+	font-weight: 700;
+	font-size: 30px;
+}
+
+.biography-text p {
+	font-weight: 500;
+}
+
+#bio-section {
+	padding: 2rem;
+	height: 100%;
+}
+
+.cv-download a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 400;
+	transition: all 0.35s ease-in-out;
+	-moz-transition: all 0.35s ease-in-out;
+	-webkit-transition: all 0.35s ease-in-out;
+	-o-transition: all 0.35s ease-in-out;
+}
+
+.cv-download a:hover {
+	color: #fafafa;
+	font-weight: 400;
+}
+
+
+/*--------------------------------------- Career Highlights Section */
+
+.timeline-container {
+	height: 100%;
+	padding: 1rem;
+}
+
+.timeline-background {
+	height: 100%;
+	width: 100%;
+	padding: 2rem 1rem;
+	margin: 0 auto;
+	background-color: #FFDFBA;
+	border-radius: 20px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	text-align: center;
+}
+
+.fa-dot-circle:before {
+	position: absolute;
+	left: -11px;
+	top: 60px;
+	font-size: 20px;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.timeline-item {
+	padding-bottom: 20px;
+	border-left: 2px solid #000;
+	margin-left: 5px;
+	position: relative;
+}
+
+.timeline-item-text {
+	text-align: left;
+	margin-left: 15px;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: #fafafa;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.timeline-item:hover .timeline-item-text {
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.6), 0 9px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.timeline-item:hover .fa-dot-circle:before {
+	font-size: 25px;
+	left: -13.5px;
+	top: 55.5px;
+}
+
+.timeline-date {
+	margin: 0;
+	font-size: 12px;
+}
+
+.timeline-item-text h4 {
+	font-size: 20px;
+	font-weight: 500;
+}
+
+.timeline-item-text p {
+	font-size: 16px;
+}
+
+
+/*--------------------------------------- Studio Credits Section */
+
+.studio-credits-container {
+	height: 100%;
+	padding: 25px 15px;
+	text-align: center;
+}
+
+.album-cover {
+	padding: 30px 35px;
+	position: relative;
+	width: 100%;
+	max-width: 320px;
+	display: inline-block;
+}
+
+.album-cover a {
+	text-decoration: none;
+}
+
+.album-cover img {
+	width: 100%;
+}
+
+.album-cover p {
+	color: #000;
+	font-size: 20px;
+	line-height: 30px;
+	width: 70%;
+	margin: 0 auto;
+	background-color: rgba( 196, 196, 196, 0.5);
+	position: absolute;
+	bottom: 13%;
+	left: 15%;
+}
+
+.soundcloud-link {
+	margin: 20px 0;
+	width: 90%;
+	height: 166px;
+	overflow: hidden;
+	border: 0;
+}
+
+.soundcloud-iframe {
+	font-size: 10px;
+	color: #cccccc;
+	line-break: anywhere;
+	word-break: normal;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	font-family: "Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma", sans-serif;
+	font-weight: 100;
+}
+
+.hvr-bounce-to-bottom:before {
+	background-color: rgba(196, 196, 196, 0.8);
+}
+
+.hvr-bounce-to-bottom:hover {
+	color: #000;
+}
+
+
+/*--------------------------------------- Lessons Page */
+
+
+/*--------------------------------------- Promo Video Section */
+
+.lesson-promo-video-iframe {
+	width: 88vw;
+	height: 49.5vw;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	overflow: hidden;
+}
+
+.promo-video-container {
+	padding: 15vw 0;
+}
+
+
+/*--------------------------------------- Lessons Overview Section */
+
+#testimonials-section {
+	padding: 2vw
+}
+
+.lessons-overview-background {
+	background: #0D3B51 url(images/lessons-background.jpg) no-repeat center;
+	background-size: cover;
+	padding: 10vw 6vw;
+	height: 100%;
+}
+
+.lessons-overview-container {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	max-width: 1000px;
+	background-color: rgba( 196, 196, 196, 0.8);
+	border-radius: 20px;
+	padding: 20px;
+	font-weight: 600;
+}
+
+.overview-icon {
+	font-size: 30px;
+}
+
+.overview-icon-container {
+	padding-top: 15px;
+}
+
+
+/*--------------------------------------- Testimonials Section */
+
+.testimonials-background {
+	padding: 8vw 4vw;
+	height: 100%;
+}
+
+.testimonials-container {
+	background-color: #ffdfba;
+	border-radius: 20px;
+	padding: 20px;
+	height: 100%;
+	width: 100%;
+	max-width: 1000px;
+	box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.6), 0 9px 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+.testimonials-container img {
+	width: 100%;
+	max-width: 86px;
+	max-height: 86px;
+	border-radius: 50%;
+	object-fit: cover;
+	margin: 0 auto;
+	margin-top: 15px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.testimonials-container p {
+	padding: 0 10px;
+}
+
+
+/*--------------------------------------- Example Lesson Section */
+
+.lesson-example-background {
+	padding: 3vw 2vw 9vw;
+}
+
+.example-video-container {
+	padding-bottom: 1rem;
+}
+
+.example-lesson-promo-video-iframe {
+	width: 88vw;
+	height: 49.5vw;
+	max-width: 400px;
+	max-height: 225px;
+	display: block;
+	margin: 0 auto;
+	border: 0;
+	overflow: hidden;
+}
+
+
+/*---------------------------------------Media Queries */
+
+
+/*----------------------------- Large Phone Queries --*/
+
+@media(min-width:400px) {
+	/*-- Lesson Overview Queries --*/
+	.lessons-overview-container {
+		padding: 20px 8vw;
+	}
+}
+
+@media (min-width:425px) {
+	/*--Navbar Queries--*/
+	.logo-new {
+		padding-left: 0.5rem;
+	}
+}
+
+
+/*-----------------------------Tablet Breakpont Queries--*/
+
+@media (min-width: 575px) {
+	/*--Hero Image Queries--*/
+	#hero-image,
+	#hero-overlay {
+		height: 550px;
+	}
+	#title-overlay {
+		top: 20%;
+		right: 42%;
+	}
+	#title-overlay h1 {
+		font-size: 40px;
+	}
+	#subtitle-overlay {
+		bottom: 26%;
+		left: 52%;
+	}
+	#subtitle-overlay h2 {
+		font-size: 1.5rem;
+	}
+	/*--What I Do Queries--*/
+	.what-i-do-button {
+		min-height: 150px;
+		min-width: 150px;
+		margin: 40px auto;
+	}
+	.what-i-do-button i {
+		font-size: 3.1rem;
+	}
+	.what-i-do-button p {
+		font-size: 1.2rem;
+	}
+	.what-i-do-button div {
+		margin-top: 12px;
+	}
+	/*--Live Performance Video Queries--*/
+	.video-container {
+		padding: 30px 0;
+	}
+	.performance-button-center {
+		padding-top: 4px;
+		height: 71px;
+	}
+	/*-- Bio Media Queries --*/
+	#bio-section {
+		padding-right: 1.6rem;
+	}
+	.biography-text {
+		padding: 0;
+	}
+	.profile-picture {
+		height: 400px;
+		width: 50%;
+		float: right;
+		margin: 0 0.5rem;
+	}
+	/*-- Career Highlights Queries --*/
+	.timeline-container {
+		padding: 1rem 4rem;
+	}
+	.studio-credits-container h2 {
+		margin-bottom: 1rem;
+	}
+	.album-cover {
+		max-width: 230px;
+		padding: 25px 5px;
+	}
+	.studio-credits-container {
+		padding: 3rem 2.1rem;
+	}
+	.soundcloud-links {
+		padding: 2rem 0;
+	}
+	/*-- Testimonials Queries --*/
+	.testimonials-container img {
+		margin-top: 10px;
+	}
+	/*-- Example Lesson Queries --*/
+	.example-lesson-promo-video-iframe {
+		width: 36vw;
+		height: 20.25vw;
+	}
+}
+
+@media(min-width:576px) {
+	/*--Navbar Queries--*/
+	.navbar-nav {
+		width: 50vw;
+	}
+	/*--Gallery Queries--*/
+	.tr-corner {
+		border-radius: 0;
+	}
+	.sm-tr-corner {
+		border-radius: 0 10px 0 0;
+	}
+	.br-corner {
+		border-radius: 0;
+	}
+	.sm-br-corner {
+		border-radius: 0 0 10px 0;
+	}
+}
+
+
+/*----------------------------- Large Tablet Queries --*/
+
+@media(min-width:768px) {
+	/*-- Bio Media Queries --*/
+	#bio-section {
+		padding: 3rem 2rem;
+	}
+	.profile-picture {
+		width: 45%;
+		margin: 0.5rem 1rem;
+	}
+	/*-- Lesson Overview Queries --*/
+	.lessons-overview-container {
+		padding: 20px;
+	}
+	/*--Navbar Queries--*/
+	.navbar-nav {
+		width: 33.33vw;
+	}
+}
+
+
+/*-----------------------------Desktop Breakpont Queries--*/
+
+@media (min-width:992px) {
+	/*--Footer Queries--*/
+	.get-in-touch {
+		padding-top: 1.5rem;
+	}
+	.mailing-list {
+		padding-top: 0;
+	}
+	.social-links li {
+		font-size: 2rem;
+	}
+	/*--What I Do Queries--*/
+	.what-i-do-container {
+		padding: 40px 10vw;
+	}
+	.what-i-do-button {
+		margin: 50px auto;
+	}
+	/*--Gallery Queries--*/
+	.gallery-container {
+		padding: 0 16px 64px 16px;
+		margin: 0;
+	}
+	.sm-tr-corner {
+		border-radius: 0;
+	}
+	.md-tr-corner {
+		border-radius: 0 10px 0 0;
+	}
+	.sm-br-corner {
+		border-radius: 0;
+	}
+	.md-br-corner {
+		border-radius: 0 0 10px 0;
+	}
+	.gallery-container h2 {
+		margin-bottom: 30px;
+	}
+	/*-- Upcoming Performance Queries --*/
+	#upcoming-performances-section h2 {
+		margin: 0 auto;
+		margin-top: 2vw;
+	}
+	#performance-button-1 {
+		background: url("images/performance-button-background-1.jpg") #1E5671 no-repeat center;
+	}
+	#performance-button-2 {
+		background: url("images/performance-button-background-2.jpg") #1E5671 no-repeat center;
+	}
+	#performance-button-3 {
+		background: #1E5671 url("images/performance-button-background-3.jpg") no-repeat center;
+		background-size: cover;
+	}
+	#performance-button-4 {
+		background: url("images/performance-button-background-4.jpg") #1E5671 no-repeat center;
+	}
+	#upcoming-performances-section {
+		height: 100%;
+		padding: 50px;
+	}
+	.performance-cards-container {
+		margin: 40px 0;
+	}
+	.performance-button {
+		width: 90%;
+		max-width: 280px;
+		height: 420px;
+	}
+	.performance-button-center {
+		height: 325px;
+		border-radius: 20px 20px 0 0;
+		padding: 20px 15px;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.25);
+	}
+	.performance-button-center h4 {
+		font-size: 30px;
+		padding-bottom: 1rem;
+		border-bottom: 1px solid #fafafa;
+		height: 89px;
+	}
+	.single-text-line {
+		padding-top: 1.3rem;
+	}
+	.performance-button-center p {
+		font-size: 15px;
+	}
+	.performance-button-right {
+		line-height: 90px;
+		height: 96px;
+		border-radius: 0 0 20px 20px;
+		font-size: 25px;
+		border-top: 1px dashed #000;
+		background-color: #FFDFBA;
+		color: #fff;
+		background-color: rgba(0, 0, 0, 0.85);
+		border-top: 1px solid rgba(0, 0, 0, 0.9);
+	}
+	.performance-button:hover .performance-button-right {
+		color: #000;
+		border-top: 1px dashed #000;
+		background-color: #FFDFBA;
+	}
+	.performance-button:hover .performance-button-center {
+		color: #000;
+		background-color: #ffdfba;
+	}
+	.performance-button:hover .performance-button-center h4 {
+		border-bottom: 1px solid #000;
+	}
+	/*-- Live Performance Video Queries---*/
+	.video-container {
+		padding: 5vw 0;
+	}
+	#live-performance-section h2 {
+		margin-bottom: 0;
+	}
+	.live-performance-iframe {
+		width: 40vw;
+		height: 22.5vw;
+	}
+	.video-container-outer {
+		padding: 0 3vw;
+	}
+	/*-- Career Highlights Queries --*/
+	.timeline-container {
+		padding: 2.5rem;
+		padding-top: 6vw;
+	}
+	.soundcloud-links {
+		padding: 2vw 0;
+	}
+	.studio-credits-container {
+		padding: 1rem;
+		padding-top: 6vw;
+	}
+	.studio-credits-container h2 {
+		margin-bottom: 3rem;
+	}
+	.album-cover {
+		padding: 10px;
+		width: 14vw;
+		max-width: 200px;
+	}
+	.album-cover p {
+		color: rgba(1, 1, 1, 0);
+		opacity: 0;
+		font-size: 25px;
+		width: 90%;
+		height: 90%;
+		background-color: rgba( 0, 0, 0, 0);
+		position: absolute;
+		bottom: 5%;
+		left: 5%;
+		transition: all 0.2s ease-in-out;
+		-moz-transition: all 0.2s ease-in-out;
+		-webkit-transition: all 0.2s ease-in-out;
+		-o-transition: all 0.2s ease-in-out;
+	}
+	.one-line {
+		padding-top: 70px;
+	}
+	.two-line {
+		padding-top: 55px;
+	}
+	.album-cover p:hover {
+		opacity: 1;
+	}
+	/*-- Lesson Promo Video Queries --*/
+	.lesson-promo-video-iframe {
+		width: 68vw;
+		height: 38.25vw;
+	}
+	.promo-video-container {
+		padding: 3vw 0;
+	}
+	/*-- Lesson Overview Queries --*/
+	.lessons-overview-container {
+		width: 68vw;
+	}
+	.lessons-overview-background {
+		padding: 12vw;
+	}
+	/*-- Testimonials Queries --*/
+	.testimonials-background {
+		padding: 7vw 3vw;
+	}
+	/*-- Example Lesson Queries --*/
+	.example-lesson-promo-video-iframe {
+		width: 32vw;
+		height: 18vw;
+	}
+	.lesson-example-background {
+		padding: 7vw 2vw;
+	}
+}
+
+
+/*----------------------------- Large Desktop Queries --*/
+
+@media (min-width:1200px) {
+	/*--Navbar Queries--*/
+	.navbar-nav {
+		width: 25vw;
+	}
+	/*--Hero Image Queries--*/
+	#title-overlay {
+		right: 46%;
+	}
+	#subtitle-overlay {
+		bottom: 24%;
+		left: 53%;
+	}
+	/*--Galley Queries--*/
+	.md-tr-corner {
+		border-radius: 0;
+	}
+	.lg-tr-corner {
+		border-radius: 0 10px 0 0;
+	}
+	.md-br-corner {
+		border-radius: 0;
+	}
+	.lg-br-corner {
+		border-radius: 0 0 10px 0;
+	}
+	/*-- Bio Media Queries --*/
+	#bio-section {
+		padding: 3rem 4rem;
+	}
+	.profile-picture {
+		margin: 1rem 0 0 0.5rem;
+	}
+}

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="description" content="Its time to learn the drums with Nick Lennon. Find out what his lessons are about, read testimonials, try an example lesson and get in touch for more details">
+      <script src="https://kit.fontawesome.com/d90f353352.js" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/phosphor-icons"></script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,600;1,700;1,800;1,900&family=PT+Sans:wght@400;700&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+      <link rel="stylesheet" href="assets/style.css">
+      <title>Nick Lennon | Session Drummer</title>
+   </head>
+   <body>
+      <!--Navbar Element (template taken from Bootstrap Website https://getbootstrap.com/docs/5.0/components/navbar/)-->
+      <header class="navbar sticky-top">
+         <!--Logo Image-->
+         <a class="navbar-brand" href="index.html" aria-label="Go to the home page (logo link)">
+         <img src="assets/images/nicklennondrums_logo.png" class="logo-new d-inline-block align-top"
+            alt="Nick lennon logo">
+         </a>
+         <!--List containing Navbar links-->
+         <ul class="navbar-nav">
+            <li class="nav-item  d-none d-sm-block">
+               <!--Navbar Link Icon with Text-->
+               <a class="nav-link" href="index.html" aria-label="Go to the home page"><i class="fa fa-home"
+                  aria-hidden="true"></i>Home</a>
+            </li>
+            <li class="nav-item">
+               <!--Navbar Link Icon with Text-->
+               <a class="nav-link" href="about-me.html" aria-label="Go to the about me page"><i class="fa fa-user"
+                  aria-hidden="true"></i>About</a>
+            </li>
+            <li class="nav-item active">
+               <!--Navbar Link Icon with Text-->
+               <a class="nav-link" href="lessons.html" aria-label="Go to the lessons page"><i
+                  class="fa fa-graduation-cap" aria-hidden="true"></i>Lessons <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+               <!--Navbar Link Icon with Text-->
+               <a class="nav-link" data-bs-toggle="modal" data-bs-target="#contact-modal" aria-label="Go to contact information"><i class="fa fa-comment-dots"
+                  aria-hidden="true"></i>Contact</a>
+            </li>
+         </ul>
+      </header>
+      <!--Contact Modal Element (template taken from Bootstrap Website https://getbootstrap.com/docs/5.0/components/modal/-->
+      <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-model-label" aria-hidden="true">
+         <div class="modal-dialog">
+            <!--Div for modal box-->
+            <div class="modal-content">
+               <!--Modal Header-->
+               <div class="modal-header text-center">
+                  <h5 class="modal-title fw-bold" id="contact-model-label">Get in Touch!</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <!--Modal Body-->
+               <div class="modal-body model-body-padding text-center">
+                  <h5 class="">There are several ways to get in touch with me</h5>
+                  <hr class="model-break">
+                  <p class="fw-bold">Email Me:</p>
+                  <p>nicklennondrums@gmail.com</p>
+                  <!--Send Email Button-->
+                  <a id="modal-email-button" href="mailto:nicklennondrums@gmail.com?subject=Email%20Contact%20From%20Website" class="btn text-center">Send Me an Email!</a>
+                  <hr class="model-break">
+                  <!--Social Media Links List-->
+                  <p class="fw-bold">Find me on Social Media:</p>
+                  <ul id="modal-social-links">
+                     <li><a class="email-link colour-black" href="https://www.facebook.com/nicklennondrums/" rel="noopener" target="_blank">Facebook</a></li>
+                     <li><a class="email-link colour-black" href="https://www.instagram.com/nicklennondrums/" rel="noopener" target="_blank">Instagram</a></li>
+                     <li><a class="email-link colour-black" href="https://www.youtube.com/channel/UCG8qt6_9IDw_Ayx4IqkKctA" rel="noopener" target="_blank">YouTube</a></li>
+                     <li><a class="email-link colour-black" href="https://soundcloud.com/nicholas-lennon" rel="noopener" target="_blank">Soundcloud</a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--/Contact Modal -->
+      <!--Lesson Promo Video Section-->
+      <section class="container-fluid g-0" id="lesson-promo-video-section">
+         <div class="row g-0">
+            <!--Video Container to create margins-->
+            <div class="col-12 promo-video-container">
+               <!--Video Iframe-->
+               <iframe class="lesson-promo-video-iframe"  src="https://www.youtube.com/embed/Dzosixa1HhM?rel=0&amp;autoplay=1&mute=1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+         </div>
+      </section>
+      <!--/Lesson Promo Video Section-->
+      <!--Lesson Overview Section-->
+      <section class="container-fluid g-0" id="lessons-overview-section">
+         <div class="row g-0">
+            <!--Lessons Overview Background containing the Image-->
+            <div class="col-12 lessons-overview-background">
+               <!--Text container (with translucent background)-->
+               <div class="lessons-overview-container">
+                  <!--Lessons Overview Title-->
+                  <h2 class="text-center mb-4 mt-2">Lessons with Nick Lennon</h2>
+                  <!--Row 1-->
+                  <div class="row g-0">
+                     <!--Lessons Overview Item-->
+                     <div class="col-12 col-md-6 order-md-1">
+                        <div class="row g-0">
+                           <!--Lessons Overview Item Text-->
+                           <div class="col-9 text-start text-md-end p-lg-2">
+                              <p>Are generally between 30 minutes and an hour in duration</p>
+                           </div>
+                           <!--Lessons Overview Item Icon-->
+                           <div class="col-3 text-center overview-icon-container">
+                              <i class="ph-clock-bold overview-icon" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Lessons Overview Item-->
+                     <div class="col-12 col-md-6 order-md-0">
+                        <div class="row g-0">
+                           <!--Lessons Overview Item Icon-->
+                           <div class="col-3 text-center overview-icon-container">
+                              <i class="ph-book-bold overview-icon" aria-hidden="true"></i>
+                           </div>
+                           <!--Lessons Overview Item Text-->
+                           <div class="col-9 text-end text-md-start p-lg-2">
+                              <p>Can include sight reading, music theory and exam preparation</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Row 2-->
+                  <div class="row g-0">
+                     <!--Lessons Overview Item-->
+                     <div class="col-12 col-md-6 order-md-1">
+                        <div class="row g-0">
+                           <!--Lessons Overview Item Text-->
+                           <div class="col-9 text-start text-md-end p-lg-2">
+                              <p>Take place online via Skype (with multiply camera angles) or in person at the studio located in Epsom, Surrey</p>
+                           </div>
+                           <!--Lessons Overview Item Icon-->
+                           <div class="col-3 text-center overview-icon-container">
+                              <i class="ph-map-pin-bold overview-icon" aria-hidden="true"></i>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Lessons Overview Item-->
+                     <div class="col-12 col-md-6 order-md-0">
+                        <div class="row g-0">
+                           <!--Lessons Overview Item Icon-->
+                           <div class="col-3 text-center overview-icon-container">
+                              <i class="ph-pencil-bold overview-icon" aria-hidden="true"></i>
+                           </div>
+                           <!--Lessons Overview Item Text-->
+                           <div class="col-9 text-end text-md-start p-lg-2">
+                              <p>Are tailored to meet the specific requirements of every student to help them achieve their goals</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!--Questions Icon-->
+                  <div class="row g-0 text-center">
+                     <div class="col-12 col-md-3 text-md-end pt-2 pt-md-3">
+                        <i class="ph-question-fill overview-icon" aria-hidden="true"></i>
+                     </div>
+                     <!--Questions Text-->
+                     <div class="col-12 col-md-6">
+                        <p class="mb-0 pt-md-2">Any questions, then get in touch</p>
+                        <!--Link to open email client with pre filled send address-->
+                        <p class="mb-0 mb-md-3"><a class="email-link colour-black" href="mailto:nicklennondrums@gmail.com?subject=Email%20Contact%20From%20Website%20Regarding%20Lessons">nick.lennon@hotmail.co.uk</a></p>
+                     </div>
+                     <!--Questions Icon-->
+                     <div class="col-12 col-md-3 text-md-start pt-md-3">
+                        <i class="ph-question-fill overview-icon" aria-hidden="true"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <!--/Lesson Overview Section-->
+      <!--Testimonials Section-->
+      <section class="container-fluid g-0" id="testimonials-section">
+         <div class="row g-0">
+            <!--Background column to create margins for Testimonials-->
+            <div class="col-12 col-lg-5 testimonials-background">
+               <div class="row g-0">
+                  <!--Container with new background colour and shadow-->
+                  <div class="col-12 testimonials-container">
+                     <!--Row for 1st and 2nd Testimonial-->
+                     <div class="row g-0">
+                        <div class="col-12 col-sm-6 col-lg-12">
+                           <!--Row for 1st Testimonial-->
+                           <div class="row g-0">
+                              <!--Testimonial Text-->
+                              <div class="col-9 p-2 p-lg-0">
+                                 <p class="mb-0 mt-3 mt-sm-0 mt-lg-3">"My son has been studying with Nick for 6 months and he loves every minute of it"</p>
+                                 <p><em>Sally Mcloud</em></p>
+                              </div>
+                              <!--Testimonial Image-->
+                              <div class="col-3">
+                                 <img src="assets/images/testimonial-pictures/test-pic-1.jpg" alt="Picture of Sally Mcloud, mother of one of Nick's students">
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-lg-12">
+                           <!--Row for 2nd Testimonial (items reordered)-->
+                           <div class="row g-0">
+                              <!--Testimonial Image-->
+                              <div class="col-3 order-sm-1 order-lg-0">
+                                 <img class="float-end float-sm-start float-lg-end" src="assets/images/testimonial-pictures/test-pic-2.jpg" alt="Picture of Sally Mcloud, mother of one of Nick's students">
+                              </div>
+                              <!--Testimonial Text-->
+                              <div class="col-9 p-2 p-lg-0 text-end order-sm-0 text-sm-start order-lg-1 text-lg-end">
+                                 <p class="mb-0">"I came back to drumming after years away and with Nick’s patience and clear guidance I have been making great progress"</p>
+                                 <p><em>Dave Miguello</em></p>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <!--Row for 3rd Testimonial-->
+                     <div class="row g-0">
+                        <div class="col-12 col-sm-8 offset-sm-2 col-lg-12 offset-lg-0">
+                           <div class="row g-0">
+                              <!--Testimonial Text-->
+                              <div class="col-9 p-2 p-lg-0">
+                                 <p class="mb-0">"I had lost motivation as a self taught drummer but Nick’s lessons helped push me to develop and play to a level I had never imagined"</p>
+                                 <p><em>James Anderson</em></p>
+                              </div>
+                              <!--Testimonial Image-->
+                              <div class="col-3">
+                                 <img src="assets/images/testimonial-pictures/test-pic-3.jpg" alt="Picture of James Anderson, one of Nick's students">
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--Example Lesson Section-->
+            <!--Background column to create margins for Lessons Example-->
+            <div class="col-12 col-lg-7 text-center" id="lessons-example-section">
+               <!--Example Lesson Background to create margins-->
+               <div class="lesson-example-background">
+                  <!--Example Lesson Title (to span entire section weh it splits into 2 columns)-->
+                  <h2 class="mb-4 mt-2 mb-sm-5 mb-lg-4">Wonder what a lesson would be like?</h2>
+                  <div class="row g-0">
+                     <div class="col-12 col-sm-6 col-lg-12">
+                        <!--Example Lesson Text-->
+                        <div class="example-lesson-text">
+                           <p class="mb-0">Here is an example of an online lesson with me.</p>
+                           <p>In this lesson I will be showing you a linear fill pattern and how to use it in several different ways.</p>
+                           <p>The lesson starts at a basic lever and gets harder to cater for all ability levels so don’t worry if you get stuck!</p>
+                           <p>Give it a try and see what you think!</p>
+                        </div>
+                     </div>
+                     <div class="col-12 col-sm-6 col-lg-12">
+                        <!--Example Lesson Video ontainer to create margins-->
+                        <div class="example-video-container">
+                           <iframe class="example-lesson-promo-video-iframe" src="https://www.youtube.com/embed/Rdq-8xOXc-w" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                        <!--Example Lesson PDF Download-->
+                        <p class="cv-download pt-2">Want to download the lesson handout? 
+                           <a href="assets/pdf/5-3-linear-fill-handout.pdf" rel="noopener" target="_blank" aria-label="Click here to download the examples lesson handout (pdf)">   Click here! <i class="fas fa-file-download" aria-hidden="true"></i>  
+                           </a>
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!--/Example Lesson Section-->
+         </div>
+      </section>
+      <!--/Testimonials Section-->
+      <footer>
+         <!--Footer Background-->
+         <div class="container-fluid g-0" id="footer">
+            <div class="row g-0">
+               <!--Site map links with title (only visable at desktop)-->
+               <div class="d-none d-lg-block col-lg-4  site-map">
+                  <h5>Site Map</h5>
+                  <ul class="map-list">
+                     <li>
+                        <a href="index.html" aria-label="Go to home page">Home</a>
+                     </li>
+                     <li>
+                        <a href="about-me.html" aria-label="Go to about me page">About Me</a>
+                     </li>
+                     <li>
+                        <a href="index.html#what-i-do-section" aria-label="Go to what I do section">What I Do</a>
+                     </li>
+                     <li>
+                        <a href="index.html#upcoming-performances-section"
+                           aria-label="Go to upcoming performances section">Upcoming Performances</a>
+                     </li>
+                     <li>
+                        <a href="about-me.html#studio-credits-section"
+                           aria-label="Go to studio credits section">Studio Credits</a>
+                     </li>
+                     <li>
+                        <a href="lessons.html" aria-label="Go to lessons page">Lessons</a>
+                     </li>
+                     <li>
+                        <a href="lessons.html#lessons-example-section"
+                           aria-label="Go to lessons example section">Wonder what a lesson would be like?</a>
+                     </li>
+                  </ul>
+               </div>
+               <!--Permenant Footer section (always visable)-->
+               <div class="col-sm-12 col-lg-8 permenant-footer">
+                  <div class="col-sm-12 col-lg-6">
+                     <!--Social Media Links-->
+                     <ul class="social-links">
+                        <li>
+                           <!--Social Link-->
+                           <a href="https://www.facebook.com/nicklennondrums/" rel="noopener" target="_blank"
+                              aria-label="Go to my facebook page (opens in a new tab)">
+                              <!--Facebook Logo-->
+                              <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <!--Social Link-->
+                           <a href="https://www.instagram.com/nicklennondrums/" rel="noopener" target="_blank"
+                              aria-label="Go to my instagram page (opens in a new tab)">
+                              <!--Instagram Logo-->
+                              <i class="fa fa-instagram" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <!--Social Link-->
+                           <a href="https://www.youtube.com/channel/UCG8qt6_9IDw_Ayx4IqkKctA" rel="noopener" target="_blank"
+                              aria-label="Go to my youtube page (opens in a new tab)">
+                              <!--YouTube Logo-->
+                              <i class="fa fa-youtube" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                        <li>
+                           <!--Social Link-->
+                           <a href="https://soundcloud.com/nicholas-lennon" rel="noopener" target="_blank"
+                              aria-label="Go to my soundcloud page (opens in a new tab)">
+                              <!--Soundcloud Logo-->
+                              <i class="fa fa-soundcloud" aria-hidden="true"></i>
+                           </a>
+                        </li>
+                     </ul>
+                  </div>
+                  <!--Get In Touch Details-->
+                  <div class="row g-0">
+                     <!--Call to email action (starts full width, then 50% then 33% width)-->
+                     <div class="col-12 col-sm-6 order-1 order-sm-0 get-in-touch">
+                        <h5>Get in touch!</h5>
+                        <!--Link to open email client with pre filled send address-->
+                        <p><a class="email-link colour-white" href="mailto:nicklennondrums@gmail.com?subject=Email%20Contact%20From%20Website">nick.lennon@hotmail.co.uk</a></p>
+                     </div>
+                     <!--Mailing list sign up form section (stacks above Call to email action at Mobile)-->
+                     <div class="col mailing-list order-0 order-sm-1">
+                        <div class="row g-0">
+                           <!--Call to sign up title (displays at desktop)-->
+                           <div class="d-none d-lg-block col-lg-12">
+                              <h5>Stay up to date with me!</h5>
+                           </div>
+                        </div>
+                        <!--Call to sign up-->
+                        <p>Sign up to my mailing list for all my latest news</p>
+                        <!--Sign up form-->
+                        <form id="mailing-list-sign-up" aria-label="Sign up to my mailing list">
+                           <input type="email" class="email-input" name="email" placeholder="Email Address"
+                              required>
+                           <input type="submit" class="btn submit" value="Sign Up!">
+                        </form>
+                     </div>
+                  </div>
+                  <div class="row g-0">
+                     <!--Copyright information-->
+                     <div class="col-md-12 col-lg-6 copyright">
+                        <p><i class=" fa fa-copyright" aria-hidden="true"></i><span class="sr-only">Copyright</span>
+                           nicklennondrums
+                        </p>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+   </body>
+</html>
