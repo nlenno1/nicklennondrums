@@ -47,7 +47,7 @@ header .current-page {
 /*----------------------------- NavBar */
 
 .navbar {
-	background-color: #0B0D10;
+	background-color: rgba(11, 13,16, 0.6);
 	height: 70px;
 	margin: 0;
 	padding: 0.3rem 0.5rem 0.25rem 0.5rem;
@@ -260,8 +260,8 @@ footer h5 {
 /*----------------------------- Hero Image */
 
 #hero-image {
-	height: 320px;
-	background: url("images/nick-lennon-hero-image.jpg") #1E5671 no-repeat center center;
+	height: 400px;
+	background: url("images/nick-lennon-hero-image.jpg") #1E5671 no-repeat top center;
 	background-size: cover;
 	position: relative;
 }
@@ -709,6 +709,10 @@ footer h5 {
 	border: 0;
 }
 
+.soundcloud-links {
+    text-align: center;
+}
+
 .soundcloud-iframe {
 	font-size: 10px;
 	color: #cccccc;
@@ -863,7 +867,7 @@ footer h5 {
 	/*--Hero Image Queries--*/
 	#hero-image,
 	#hero-overlay {
-		height: 550px;
+		height: 630px;
 	}
 	#title-overlay {
 		top: 20%;

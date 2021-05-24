@@ -20,7 +20,7 @@
    </head>
    <body>
       <!--Navbar Element (template taken from Bootstrap Website https://getbootstrap.com/docs/5.0/components/navbar/)-->
-      <header class="navbar sticky-top">
+      <header class="navbar fixed-top">
          <!--Logo Image-->
          <a class="navbar-brand" href="index.html" aria-label="Go to the home page (logo link)">
          <img src="assets/images/nicklennondrums_logo.png" class="logo-new d-inline-block align-top"
@@ -35,7 +35,7 @@
             </li>
             <li class="nav-item">
                <!--Navbar Link Icon with Text-->
-               <a class="nav-link" href="about-me.html" aria-label="Go to the about me page"><i class="fa fa-user"
+               <a class="nav-link" href="#bio-section" aria-label="Go to the about me page"><i class="fa fa-user"
                   aria-hidden="true"></i>About</a>
             </li>
             <li class="nav-item">
@@ -84,7 +84,7 @@
       <!-- /Contact Modal -->
       <!-- Hero Image -->
       <section class="container-fluid g-0">
-         <div class="row g-0">
+        <div class="row g-0">
             <!--Hero Image Background containing Image-->
             <div class="col-12 hero-image-container" id="hero-image">
                <!--Semi transparent image overlay-->
@@ -99,49 +99,9 @@
                   <h2>Drum Tutor</h2>
                </div>
             </div>
-         </div>
+        </div>
       </section>
       <!-- /Hero Image -->
-      <!-- What I Do -->
-      <section class="container-fluid g-0">
-         <div class="row g-0">
-            <div class="col-12" id="what-i-do-section">
-               <!--List containg Nav Links-->
-               <ul class="what-i-do-container">
-                  <li class="col-4">
-                     <!--Nav button-->
-                     <a class="nav-icon what-i-do-button btn" href="#upcoming-performances-section "
-                        aria-label="Go to live performance section">
-                        <div>
-                           <i class="fa fa-music" aria-hidden="true"></i>
-                           <p>Live Performance</p>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="col-4">
-                     <!--Nav button-->
-                     <a class="nav-icon what-i-do-button btn" href="lessons.html " aria-label="Go to lessons page">
-                        <div class="lessons-button">
-                           <i class="fa fa-graduation-cap" aria-hidden="true"></i>
-                           <p>Lessons</p>
-                        </div>
-                     </a>
-                  </li>
-                  <li class="col-4">
-                     <!--Nav button-->
-                     <a class="nav-icon what-i-do-button btn" href="about-me.html#studio-credits-section "
-                        aria-label="Go to studio credits section">
-                        <div>
-                           <i class="fa fa-microphone" aria-hidden="true"></i>
-                           <p>Studio Recording</p>
-                        </div>
-                     </a>
-                  </li>
-               </ul>
-            </div>
-         </div>
-      </section>
-      <!-- /What I Do -->
       <!--Galley-->
       <section class="container-fluid" id="gallery-section">
          <div class="row">
@@ -200,126 +160,146 @@
          </div>
       </section>
       <!--/Galley-->
+      <!--Biography Section-->
+      <section class="container-fluid g-0" id="bio-section">
+         <div class="row g-0">
+            <!--Column containing the Bio-->
+            <div class="col-12 biography-text">
+               <!--Profile Picture (floated left)-->
+               <img class="profile-picture" src="assets/images/profile-picture.jpg"
+                  alt="Picture of Nick Lennon holding some drumsticks">
+               <!--Bio Title and Text-->
+               <h2><i class="ph-book-bold about-me-icon" aria-hidden="true"></i> Biography</h2>
+               <p>London based British musician, Nick Lennon, has been bringing his passion for drumming, performance
+                  and entertainment to stage for over 10 years. His technical abilities are the culmination of drum
+                  lessons from the age of 8, achieving a degree in Contemporary Music Performance and private study
+                  with many prestigious tutors including Ed Spevock and Pete Riley.
+               </p>
+               <p>Nick is a very adaptable player who has a broad spectrum of percussive skills including tuned,
+                  auxiliary and electronic percussion.
+               </p>
+               <p>With his infectious stage presence, interminable energy and drumming prowess, every performance of
+                  Nick's is a joy to watch and listen to.
+               </p>
+               <p>As a drum kit tutor, Nick encourages and pushes his students to reach their full drumming potential,
+                  through individually designed learning plans, drawing on his experience working in the music
+                  industry to make the lessons relevant.
+               </p>
+               <!--CV Download Text and Link-->
+               <p class="cv-download">Are you a recruiter? Want to download a basic version of Nick's CV? <a
+                  href="assets/pdf/nick-lennon-website-cv.pdf" rel="noopener" target="_blank" aria-label="Click here to download my CV">Click here! <i
+                  class="fas fa-file-download" aria-hidden="true"></i></a>
+               </p>
+            </div>
+         </div>
+      </section>
+      <!--/Biography Section-->
       <!--Upcoming Performances Section-->
       <section class="container-fluid" id="upcoming-performances-section">
-         <div class="row g-0">
+        <div class="row g-0">
             <!--Section Title-->
             <div class="col-12">
-               <h2>Upcoming Performances</h2>
+                <h2>Upcoming Performances</h2>
             </div>
-         </div>
-         <!--Upcoming Performance Cards Container-->
-         <div class="row g-0 performance-cards-container">
-            <!--Performance Card Background-->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 performance-button" id="performance-button-1">
-               <div class="row g-0">
-                  <!--Performance Button Left Section-->
-                  <div class="col-3 d-lg-none performance-button-left">
-                     <i class="fa fa-calendar" aria-hidden="true"></i>
+        </div>
+        <div class="row g-0">
+            <!--Container for Studio Credits and Career Highlights Section-->
+            <div class="col-12 col-lg-6 timeline-container">
+               <!--Timeline coloured background-->
+               <div class="timeline-background">
+                  <h2><i class="ph-briefcase-bold about-me-icon d-none d-sm-inline" aria-hidden="true"></i>Career Highlights<i
+                     class="ph-briefcase-bold about-me-icon d-none d-sm-inline" aria-hidden="true"></i></h2>
+                  <!--1st Timeline Item-->
+                  <div class="timeline-item">
+                     <!--Timeline Item Bullet Point on the Timeline-->
+                     <div class="timeline-item-point">
+                        <i class="far fa-dot-circle" aria-hidden="true"></i>
+                        <!--Timeline Rectangle containing all text-->
+                        <div class="timeline-item-text">
+                           <!--Timeline item text-->
+                           <p class="timeline-date">2016- 2020</p>
+                           <h4>Performed on Cruise Ships</h4>
+                           <p>Nick spent 5 years performing on cruise ships all over the world in many roles from
+                              drummer in the jazz band, and Royal Court Theatre Drummer to Musical Director.
+                              During this time, travelling the world and visiting over 50 countries, Nick worked
+                              for Cunard, P&O Australia, P&O UK and SAGA Cruises Ltd and has worked on over 6
+                              different ships.
+                           </p>
+                        </div>
+                     </div>
                   </div>
-                  <!--Performance Button Middle Section-->
-                  <div class="col-6 col-lg-12 performance-button-center">
-                     <h4 class=" mb-1 mb-lg-3">West End Songs for a New World</h4>
-                     <p class=" mb-0 pt-lg-2 mb-lg-1">Adelphi Theatre, London</p>
-                     <p class=" mb-0 mb-lg-1">Date TBC</p>
+                  <!--2nd Timeline Item-->
+                  <div class="timeline-item">
+                     <!--Timeline Item Bullet Point on the Timeline-->
+                     <div class="timeline-item-point">
+                        <i class="far fa-dot-circle" aria-hidden="true"></i>
+                        <!--Timeline Rectangle containing all text-->
+                        <div class="timeline-item-text">
+                           <!--Timeline item text-->
+                           <p class="timeline-date">2014</p>
+                           <h4>Graduated from University</h4>
+                           <p>Nick graduated from The Academy of Contemporary Music in late 2014 after completing a
+                              Higher Diploma and Degree in Contemporary Music Performance.
+                           </p>
+                        </div>
+                     </div>
                   </div>
-                  <!--Performance Button Right Section (with link)-->
-                  <a href="https://www.ticketsource.co.uk/" rel="noopener" target="_blank"
-                     class="col-3 col-lg-12 performance-button-right"
-                     aria-label="Go to ticket sellers page (opens in a new tab)">
-                  Tickets
-                  </a>
+                  <!--3rd Timeline Item-->
+                  <div class="timeline-item">
+                     <!--Timeline Item Bullet Point on the Timeline-->
+                     <div class="timeline-item-point">
+                        <i class="far fa-dot-circle" aria-hidden="true"></i>
+                        <!--Timeline Rectangle containing all text-->
+                        <div class="timeline-item-text">
+                           <!--Timeline item text-->
+                           <p class="timeline-date">2012</p>
+                           <h4>London 2012 Olympic Ceremonies</h4>
+                           <p>Nick was lucky enough to work as part of the team involved in putting together a
+                              section of the London 2012 Olympic Opening Ceremony. As part of this performance, he
+                              joined 1000 other drummers in the Pandemonium section, which was directed by Danny
+                              Boyle.
+                              Throughout the rehearsals, which lasted for several months, and performances Nick
+                              bumped into many famous faces in an experience he would never forget.
+                           </p>
+                        </div>
+                     </div>
+                  </div>
                </div>
-            </div>
-            <!--Performance Card Background-->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 performance-button" id="performance-button-2">
-               <div class="row g-0">
-                  <!--Performance Button Left Section-->
-                  <div class="col-3 d-lg-none performance-button-left">
-                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </div>
-                  <!--Performance Button Middle Section-->
-                  <div class="col-6 col-lg-12 performance-button-center">
-                     <h4 class=" mb-1 mb-lg-3 single-text-line">Blues Night Jam</h4>
-                     <p class=" mb-0 pt-lg-2 mb-lg-1">Venue TBC</p>
-                     <p class=" mb-0 mb-lg-1">16th July 2021</p>
-                  </div>
-                  <!--Performance Button Right Section (with link)-->
-                  <a href="https://www.ticketsource.co.uk/" rel="noopener" target="_blank"
-                     class="col-3 col-lg-12 performance-button-right"
-                     aria-label="Go to ticket sellers page (opens in a new tab)">
-                  Tickets
-                  </a>
-               </div>
-            </div>
-            <!--Performance Card Background-->
-            <div class="col-12 col-sm-6 col-lg-4 col-xl-3 performance-button" id="performance-button-3">
-               <div class="row g-0">
-                  <!--Performance Button Left Section-->
-                  <div class="col-3 d-lg-none  performance-button-left">
-                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </div>
-                  <!--Performance Button Middle Section-->
-                  <div class="col-6 col-lg-12 performance-button-center">
-                     <h4 class=" mb-1 mb-lg-3 single-text-line">Party In The Park</h4>
-                     <p class=" mb-0 pt-lg-2 mb-lg-1">Hyde Park, London</p>
-                     <p class=" mb-0 mb-lg-1">20th August 2021</p>
-                  </div>
-                  <!--Performance Button Right Section (with link)-->
-                  <a href="https://www.ticketsource.co.uk/" rel="noopener" target="_blank"
-                     class="col-3 col-lg-12 performance-button-right"
-                     aria-label="Go to ticket sellers page (opens in a new tab)">
-                  Tickets
-                  </a>
-               </div>
-            </div>
-            <!--Performance Card Background (only visable at desktop)-->
-            <div class="d-none d-xxl-block col-xxl-3 performance-button" id="performance-button-4">
-               <div class="row g-0">
-                  <!--Performance Button Left Section-->
-                  <div class="col-3 d-lg-none  performance-button-left">
-                     <i class="fa fa-calendar" aria-hidden="true"></i>
-                  </div>
-                  <!--Performance Button Middle Section-->
-                  <div class="col-6 col-lg-12 performance-button-center">
-                     <h4 class=" mb-1 mb-lg-3">Five Card Deck Album Release</h4>
-                     <p class=" mb-0 pt-lg-2 mb-lg-1">Venue TBC</p>
-                     <p class=" mb-0 mb-lg-1">7th November 2021</p>
-                  </div>
-                  <!--Performance Button Right Section (with link)-->
-                  <a href="https://www.ticketsource.co.uk/" rel="noopener" target="_blank"
-                     class="col-3 col-lg-12 performance-button-right"
-                     aria-label="Go to ticket sellers page (opens in a new tab)">
-                  Tickets
-                  </a>
-               </div>
-            </div>
-         </div>
       </section>
       <!--/Upcoming Performances Section-->
-      <!--Live Performance Video Section-->
+      <!--Live Performance Media Section-->
       <section class="container-fluid" id="live-performance-section">
-         <!--Section background-->
-         <div class="row video-container-outer">
-            <!--Section Title-->
-            <div class="col-12">
-               <h2>Live Performance</h2>
+        <!--Section background-->
+        <div class="row video-container-outer">
+        <!--Section Title-->
+        <div class="col-12">
+            <h2>Live Performance Media</h2>
+        </div>
+        <!--Video container-->
+        <div class="col col-lg-6 video-container">
+            <iframe class="live-performance-iframe" src="https://www.youtube.com/embed/GUtpBjRjwrU"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <!--Video container (only visable at desktop)-->
+        <div class="d-none d-lg-block col-lg-6 video-container">
+            <iframe class="live-performance-iframe" src="https://www.youtube.com/embed/mxPB_atc4no"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+         <!--Soundcloud Iframe -->
+        <div class="row g-0 soundcloud-links">
+            <div class="col-12 col-md-6">
+                <iframe class="soundcloud-link"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1014860209&color=%238494a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </div>
-            <!--Video container-->
-            <div class="col col-lg-6 video-container">
-               <iframe class="live-performance-iframe" src="https://www.youtube.com/embed/GUtpBjRjwrU"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
+            <div class="col-12 col-md-6">
+                <iframe class="soundcloud-link"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1014860203&color=%238494a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
             </div>
-            <!--Video container (only visable at desktop)-->
-            <div class="d-none d-lg-block col-lg-6 video-container">
-               <iframe class="live-performance-iframe" src="https://www.youtube.com/embed/mxPB_atc4no"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-            </div>
-         </div>
+        </div>
       </section>
-      <!--/Live Performance Video Section-->
+      <!--/Live Performance Media Section-->
       <footer>
          <!--Footer Background-->
          <div class="container-fluid g-0" id="footer">
