@@ -1325,6 +1325,10 @@ footer h5 {
     background-size: cover;
 }
 
+#vertical-timeline-creator {
+    border-left: 3px solid rgba(256, 256, 256, 0.7);
+}
+
 #career-highlights-section h2 {
     margin: 0 auto;
     margin-top: 1vw;
@@ -1362,7 +1366,6 @@ footer h5 {
 }
 
 .timeline-creator {
-    border-top: 3px solid rgba(256, 256, 256, 0.7);
     margin-top: 20px;
 }
 
@@ -1372,11 +1375,38 @@ footer h5 {
     padding: 5px;
     margin: 20px auto;
     border-radius: 5px;
+    display: none;
 }
 
 .fa-dot-circle:before {
     position: absolute;
     color: rgba(256, 256, 256, 0.7);
-    top: 142px;
+    top: -18px;
+    left: -12px;
     font-size: 1.3rem;
+}
+
+@media (min-width:768px) {
+    #career-highlights-section {
+        height: 650px;
+    }
+
+    .fa-dot-circle:before {
+        top: 142px;
+        left: 47%;
+    }
+
+    .timeline-creator {
+        border-top: 3px solid rgba(256, 256, 256, 0.7);
+    }
+
+    #vertical-timeline-creator {
+    border-left: none;
+    }
+}
+
+@media (min-width:992px) {
+    #career-highlights-section {
+        height: 550px;
+    }
 }
