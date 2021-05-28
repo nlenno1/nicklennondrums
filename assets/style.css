@@ -1353,7 +1353,7 @@ footer h5 {
 
 .timeline-item-top {
     width: 95%;
-    height: 130px;
+    height: 152px;
     background-color: rgba(256, 256, 256, 0.7);
     padding: 5px;
     margin: 0 auto 15px;
@@ -1408,5 +1408,9 @@ footer h5 {
 @media (min-width:992px) {
     #career-highlights-section {
         height: 550px;
+    }
+    .timeline-item-top {
+    width: 95%;
+    height: 130px;
     }
 }

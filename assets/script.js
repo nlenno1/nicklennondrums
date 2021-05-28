@@ -1,4 +1,3 @@
-
 console.log("js linked")
 
 function highlightHoverEvent (hoverLocationId) {
@@ -11,20 +10,6 @@ function highlightHoverEvent (hoverLocationId) {
     );
 }
 
-function clickHighlightEvent (LocationId) {
-    $(`${LocationId} .timeline-item-top`).click(function() {
-        if ($(`${LocationId} .timeline-item-expand`).css("display") == "block") {
-            $(`${LocationId} .timeline-item-expand`).slideUp().css("display", "hidden");
-        }
-    });
-}
-
-
-
 highlightHoverEvent ("#highlight-1")
 highlightHoverEvent ("#highlight-2")
 highlightHoverEvent ("#highlight-3")
-
-clickHighlightEvent ("#highlight-1")
-clickHighlightEvent ("#highlight-2")
-clickHighlightEvent ("#highlight-3")
