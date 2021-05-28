@@ -616,46 +616,21 @@ footer h5 {
 @media (min-width: 575px) {
 
     /*--Hero Image Queries--*/
-    #hero-image,
-    #hero-overlay {
+    #hero-image img {
         height: 630px;
     }
 
     #title-overlay {
-        top: 20%;
-        right: 42%;
+        top: 16%;
+        right: 40%;
     }
 
     #title-overlay h1 {
         font-size: 40px;
     }
 
-    #subtitle-overlay {
-        bottom: 26%;
-        left: 52%;
-    }
-
-    #subtitle-overlay h2 {
+    #title-overlay h2 {
         font-size: 1.5rem;
-    }
-
-    /*--What I Do Queries--*/
-    .what-i-do-button {
-        min-height: 150px;
-        min-width: 150px;
-        margin: 40px auto;
-    }
-
-    .what-i-do-button i {
-        font-size: 3.1rem;
-    }
-
-    .what-i-do-button p {
-        font-size: 1.2rem;
-    }
-
-    .what-i-do-button div {
-        margin-top: 12px;
     }
 
     /*--Live Performance Video Queries--*/
@@ -797,11 +772,6 @@ footer h5 {
     }
 
     /*--Gallery Queries--*/
-    .gallery-container {
-        padding: 0 16px 64px 16px;
-        margin: 0;
-    }
-
     .sm-tr-corner {
         border-radius: 0;
     }
@@ -1136,7 +1106,7 @@ footer h5 {
 
 @media (min-width:768px) {
     #career-highlights-section {
-        height: 650px;
+        height: 670px;
     }
 
     .fa-dot-circle:before {
