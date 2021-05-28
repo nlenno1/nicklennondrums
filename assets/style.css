@@ -284,8 +284,8 @@ footer h5 {
     padding: 8px;
     border-radius: 10px;
     background-color: rgba(196, 196, 196, 0.6);
-    top: 20%;
-    right: 34%;
+    top: 15%;
+    right: 38%;
     text-align: center;
     position: absolute;
 }
@@ -442,8 +442,8 @@ footer h5 {
 
 .cv-download a {
     color: #000;
+    font-weight: 700;
     text-decoration: none;
-    font-weight: 400;
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -451,11 +451,9 @@ footer h5 {
 }
 
 .cv-download a:hover {
-    color: #fafafa;
-    font-weight: 400;
+    color: #fff;
+    cursor: pointer;
 }
-
-
 
 .soundcloud-link {
     margin: 20px 0;
@@ -621,8 +619,8 @@ footer h5 {
     }
 
     #title-overlay {
-        top: 16%;
-        right: 40%;
+        top: 24%;
+        right: 42%;
     }
 
     #title-overlay h1 {
@@ -999,6 +997,7 @@ footer h5 {
     /*--Hero Image Queries--*/
     #title-overlay {
         right: 46%;
+        top: 22%;
     }
 
     #subtitle-overlay {
@@ -1025,7 +1024,7 @@ footer h5 {
 
     /*-- Bio Media Queries --*/
     #bio-section {
-        padding: 3rem 4rem;
+        padding: 6rem 4rem;
     }
 
     .profile-picture {
