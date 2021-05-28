@@ -118,14 +118,14 @@ footer h5 {
 }
 
 .social-links {
-    padding: 0.5rem;
+    padding: 1.2rem 0 0;
     text-align: center;
     margin: 0;
 }
 
 .social-links li {
     display: inline-block;
-    font-size: 1.6rem;
+    font-size: 2.25rem;
     padding: 0 1rem;
 }
 
@@ -142,14 +142,15 @@ footer h5 {
     color: #5C93AE;
 }
 
-.get-in-touch,
-.mailing-list {
+.get-in-touch {
     text-align: center;
     margin-bottom: 0;
+    padding: 0.8rem 0.5rem;
 }
 
-.get-in-touch {
-    padding-top: 1rem;
+.get-in-touch p{
+    margin-bottom: 0;
+    font-size: 1rem;
 }
 
 .email-link {
@@ -171,11 +172,12 @@ footer h5 {
 
 .site-map {
     padding-left: 4rem;
+    padding-bottom: 1rem
 }
 
 .site-map>h5 {
     margin: 0;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }
 
 .map-list {
@@ -748,16 +750,8 @@ footer h5 {
 @media (min-width:992px) {
 
     /*--Footer Queries--*/
-    .get-in-touch {
-        padding-top: 1.5rem;
-    }
-
-    .mailing-list {
-        padding-top: 0;
-    }
-
     .social-links li {
-        font-size: 2rem;
+        font-size: 2.8rem;
     }
 
     /*--What I Do Queries--*/
