@@ -59,7 +59,7 @@
     </header>
     <!--Contact Modal Element (template taken from Bootstrap Website https://getbootstrap.com/docs/5.0/components/modal/-->
     <div class="modal fade" id="contact-modal" tabindex="-1" aria-labelledby="contact-model-label" aria-hidden="true">
-        <div class="modal-dialog">
+        <div class="modal-dialog .modal-lg">
             <!--Div for modal box-->
             <div class="modal-content">
                 <!--Modal Header-->
@@ -68,7 +68,7 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <!--Modal Body-->
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAYrPraziQOu8Zl4pEurLNtB3ce6_BrmQxYpi91zG8MOnjLg/viewform?embedded=true" width="640" height="818" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScAYrPraziQOu8Zl4pEurLNtB3ce6_BrmQxYpi91zG8MOnjLg/viewform?embedded=true">Loading…</iframe>
                 </div>
             </div>
         </div>
@@ -83,6 +83,7 @@
                 <!--Floating title-->
                 <div id="title-overlay">
                     <h1>Nick Lennon</h1>
+                    <hr class="title-divider">
                     <h2>Session Drummer</h2>
                     <h2>Drum Tutor</h2>
                 </div>
@@ -96,55 +97,28 @@
         <div class="row">
             <!--Section background with Title-->
             <div class="col gallery-container">
-                <h2>Gallery</h2>
                 <!--Gallery contrast background-->
-                <div class="gallery-container-inner">
-                    <!--Images container-->
-                    <div class="row g-0" id="gallery">
-                        <div class="col">
-                            <img class="img-1 tl-corner" src="assets/images/gallery/gallery-photo-1.jpg"
-                                alt="Nick Lennon drumming on the back deck of a cruise ship as the sunsets behind him">
-                            <img class="img-1" src="assets/images/gallery/gallery-photo-2.jpg"
-                                alt="view from the drum kit on stage at the Queen Mary two's ballroom">
-                            <img class="img-2 bl-corner" src="assets/images/gallery/gallery-photo-3.jpg"
-                                alt="Nick Lennon in formal wear with two other musicians">
+                <div class="services-container">
+                    <h3>Services Avaliable</h3>
+                    <div class="graphics-container">
+                        <div class="serices-graphic">
+                            <i class="serices-icon fas fa-music"></i>
+                            <p class="serices-text">Live Music</p>
                         </div>
-                        <div class="col">
-                            <img class="img-2 tr-corner" src="assets/images/gallery/gallery-photo-4.jpg"
-                                alt="Nick Lennon with the London 2012 Olympic cauldron after the opening ceremony">
-                            <img class="img-1" src="assets/images/gallery/gallery-photo-5.jpg"
-                                alt="Percussion set up for a show on stage">
-                            <img class="img-1 br-corner" src="assets/images/gallery/gallery-photo-6.jpg"
-                                alt=" Nick Lennon sitting inside a half open drum case smiling">
+                        <div class="serices-graphic">
+                            <i class="serices-icon fas fa-microphone-alt"></i>
+                            <p class="serices-text">Recording</p>
                         </div>
-                        <div class="col d-none d-sm-block">
-                            <img class="img-1 sm-tr-corner d-none d-sm-block"
-                                src="assets/images/gallery/gallery-photo-7.jpg" alt="Nick Lennon playing cajon on TV">
-                            <img class="img-1 d-none d-sm-block" src="assets/images/gallery/gallery-photo-8.jpg"
-                                alt="Selfie with the Queen Mary 2 World Voyage 2019 sign">
-                            <img class="img-2 sm-br-corner d-none d-sm-block"
-                                src="assets/images/gallery/gallery-photo-9.jpg" alt="Nick Lennon drumming">
+                        <div class="serices-graphic">
+                            <i class="serices-icon fas fa-chalkboard-teacher"></i>
+                            <p class="serices-text">Teaching</p>
                         </div>
-                        <div class="col d-none d-lg-block">
-                            <img class="img-2 md-tr-corner d-none d-md-block"
-                                src="assets/images/gallery/gallery-photo-10.jpg"
-                                alt="Nick Lennon drumming at a cruise ship sailaway party">
-                            <img class="img-1 d-none d-md-block" src="assets/images/gallery/gallery-photo-11.jpg"
-                                alt="Fairy lights reflecting off of a drum kit">
-                            <img class="img-1 md-br-corner d-none d-md-block"
-                                src="assets/images/gallery/gallery-photo-12.jpg"
-                                alt="Small drum kit set up from behind">
-                        </div>
-                        <div class="col d-none d-xl-block">
-                            <img class="img-1 lg-tr-corner d-none d-lg-block"
-                                src="assets/images/gallery/gallery-photo-13.jpg" alt="drum kit set up in a field">
-                            <img class="img-1 d-none d-lg-block" src="assets/images/gallery/gallery-photo-14.jpg"
-                                alt="small percussion and cajon set up">
-                            <img class="img-2 lg-br-corner d-none d-lg-block"
-                                src="assets/images/gallery/gallery-photo-15.jpg"
-                                alt="the big band onboard the Queen Mary 2">
+                        <div class="serices-graphic">
+                            <i class="serices-icon fas fa-pencil-alt"></i>
+                            <p class="serices-text">Transcription</p>
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
@@ -185,7 +159,7 @@
         </div>
     </section>
     <!--/Biography Section-->
-    <!--Upcoming Performances Section-->
+    <!--Career Highlights Section-->
     <section class="container-fluid" id="career-highlights-section">
         <div class="row g-0">
             <!--Section Title-->
@@ -271,11 +245,11 @@
             <div class="row g-0 soundcloud-links">
                 <div class="col-12 col-md-6">
                     <iframe class="soundcloud-link"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1014860209&color=%238494a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1014860209&color=%238494a4&auto_play=false&hide_related=false&show_comments=false&show_user=false&false=false&show_teaser=false"></iframe>
                 </div>
                 <div class="col-12 col-md-6">
                     <iframe class="soundcloud-link"
-                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1014860203&color=%238494a4&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe>
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1014860203&color=%238494a4&auto_play=false&hide_related=false&show_comments=false&show_user=false&false=false&show_teaser=false"></iframe>
                 </div>
             </div>
     </section>

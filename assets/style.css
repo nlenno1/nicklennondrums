@@ -231,6 +231,7 @@ footer h5 {
 }
 
 .modal-dialog {
+    width: 98%;
     max-width: 800px;
     margin: 2rem auto;
 }
@@ -282,6 +283,14 @@ footer h5 {
     margin-top: 70px;
 }
 
+.title-divider{
+    border: 1.5px solid #c4c4c4;
+    color: #c4c4c4;
+    width: 40%;
+    opacity: 1;
+    margin: 10px auto;
+}
+
 .hero-image-container {
     padding: 0;
 }
@@ -293,13 +302,13 @@ footer h5 {
 
 #title-overlay {
     color: #000;
-    padding: 8px;
+    padding: 8px 24px;
     border-radius: 10px;
     background-color: rgba(196, 196, 196, 0.6);
     top: 15%;
-    right: 38%;
     text-align: center;
     position: absolute;
+    margin: 0 0 0 16vw;
 }
 
 #title-overlay h1 {
@@ -482,7 +491,6 @@ footer h5 {
 .soundcloud-iframe {
     font-size: 10px;
     color: #cccccc;
-    line-break: anywhere;
     word-break: normal;
     overflow: hidden;
     white-space: nowrap;
@@ -631,8 +639,8 @@ footer h5 {
     }
 
     #title-overlay {
-        top: 24%;
-        right: 42%;
+        margin: 0 0 0 28vw;
+        top: 28%;
     }
 
     #title-overlay h1 {
@@ -1000,7 +1008,7 @@ footer h5 {
 
     /*--Hero Image Queries--*/
     #title-overlay {
-        right: 46%;
+        margin: 0 0 0 37vw;
         top: 22%;
     }
 
@@ -1042,8 +1050,8 @@ footer h5 {
 #career-highlights-section {
     padding: 40px 15px;
     height: 100%;
-    background: url("images/performance-background.jpg") #1E5671 no-repeat center center fixed;
-    background-size: cover;
+    background: url("images/performance-background.jpg") #1E5671 fixed;
+    background-size: 100vw auto;
 }
 
 #vertical-timeline-creator {
@@ -1134,4 +1142,54 @@ footer h5 {
     width: 95%;
     height: 130px;
     }
+}
+
+/*--------------------------------Sevices Section */
+
+.services-container {
+    height: 100%;
+    width: 100%;
+    padding: 25px 15px 20px;
+    background-color: #FFDFBA;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
+}
+
+.serices-graphic{
+    width: 110px;
+    padding: 20px 4px 15px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 40px 0 rgb(0 0 0 / 19%);
+    border-radius: 10px;
+	background-color: #c4c4c4;
+	border: 2px solid #c4c4c4;
+	color: #1E5671;
+	transition: all 0.2s ease-in-out;
+	-moz-transition: all 0.2s ease-in-out;
+	-webkit-transition: all 0.2s ease-in-out;
+	-o-transition: all 0.2s ease-in-out;
+}
+
+.serices-graphic:hover{
+    color: #0D3B51;
+    background-color: #fafafa;
+    border: 2px solid #1E5671;
+    cursor: pointer;
+}
+
+.graphics-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-around;
+}
+
+.serices-text{
+    margin: 0;
+}
+
+.serices-icon{
+    font-size: 2rem;
 }
