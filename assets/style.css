@@ -1156,9 +1156,10 @@ footer h5 {
 }
 
 .serices-graphic{
-    width: 110px;
-    padding: 20px 4px 15px;
-    margin: 15px 0;
+    width: 130px;
+    height: 115px;
+    padding: 25px 4px 15px;
+    margin: 15px 5px;
     box-sizing: border-box;
     box-shadow: 0 8px 16px 0 rgb(0 0 0 / 20%), 0 12px 40px 0 rgb(0 0 0 / 19%);
     border-radius: 10px;
@@ -1168,7 +1169,8 @@ footer h5 {
 	transition: all 0.2s ease-in-out;
 	-moz-transition: all 0.2s ease-in-out;
 	-webkit-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    font-size: 1.2em;
 }
 
 .serices-graphic:hover{
@@ -1192,4 +1194,8 @@ footer h5 {
 
 .serices-icon{
     font-size: 2rem;
+}
+
+.popover-body {
+    text-align: center;
 }
