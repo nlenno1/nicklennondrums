@@ -431,15 +431,19 @@ footer h5 {
     height: 300px;
     width: 100%;
     margin-bottom: 2rem;
+    border: 5px ridge #fafafa;
     border-radius: 20px;
-    background-color: #0D3B51;
+    background-color: #000;
     object-position: top;
     object-fit: cover;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 12px 40px 0 rgba(0, 0, 0, 0.19);
 }
 
-.biography-text {
+.biography-text-with-photo {
+    display: flex;
+    align-items: center;
     height: 100%;
+    color: #000;
 }
 
 .about-me-icon {
@@ -457,8 +461,10 @@ footer h5 {
 }
 
 #bio-section {
-    padding: 2rem;
+    padding: 40px 15px;
     height: 100%;
+    background: url("images/performance-background.jpg") #1E5671 fixed;
+    background-size: 100vw auto;
 }
 
 .cv-download a {
@@ -666,15 +672,21 @@ footer h5 {
         padding-right: 1.6rem;
     }
 
+    .biography-text-with-photo {
+        background-color: rgba(196, 196, 196, 0.6);
+        border-radius: 20px;
+    }
+
     .biography-text {
-        padding: 0;
+        padding: 15px;
+        order: 1;
     }
 
     .profile-picture {
         height: 400px;
         width: 50%;
-        float: right;
-        margin: 0 0.5rem;
+        margin: 15px 15px 15px 0;
+        order: 2;
     }
 
     /*-- Career Highlights Queries --*/
@@ -748,7 +760,6 @@ footer h5 {
 
     .profile-picture {
         width: 45%;
-        margin: 0.5rem 1rem;
     }
 
     /*-- Lesson Overview Queries --*/
@@ -1038,20 +1049,14 @@ footer h5 {
     #bio-section {
         padding: 6rem 4rem;
     }
-
-    .profile-picture {
-        margin: 1rem 0 0 0.5rem;
-    }
 }
 
 
 /* New timline element */
 
 #career-highlights-section {
-    padding: 40px 15px;
+    padding: 2rem;
     height: 100%;
-    background: url("images/performance-background.jpg") #1E5671 fixed;
-    background-size: 100vw auto;
 }
 
 #vertical-timeline-creator {
