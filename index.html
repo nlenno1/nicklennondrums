@@ -78,7 +78,7 @@
     <section class="container-fluid g-0">
         <div class="row g-0">
             <!--Hero Image Background containing Image-->
-            <div class="col-12 hero-image-container" id="hero-image">
+            <div class="col-12 hero-image-container triangle" id="hero-image">
                 <img src="assets/images/nick-lennon-hero-image.jpg" alt="Nick Lennon playing the drums">
                 <!--Floating title-->
                 <div id="title-overlay">
@@ -125,16 +125,19 @@
     </section>
     <!--/Galley-->
     <!--Biography Section-->
-    <section class="container-fluid g-0" id="bio-section">
+    <section class="container-fluid g-0" id="about-section">
         <div class="row g-0">
-            <!--Column containing the Bio-->
-            <div class="col-12 biography-text-with-photo">
-                <!--Profile Picture (floated left)-->
-                <img class="profile-picture" src="assets/images/profile-picture.jpg"
-                    alt="Picture of Nick Lennon holding some drumsticks">
+            <!--Profile Picture-->
+            <div class="about-container">
+                <h2><i class="ph-book-bold about-me-icon d-none d-md-inline" aria-hidden="true"></i> About</h2>
                 <div class="biography-text">
+                    <div class="picture-container">
+                        <div class="picture-mount">
+                            <img class="profile-picture" src="assets/images/profile-picture.jpg"
+                                alt="Picture of Nick Lennon holding some drumsticks">
+                        </div>
+                    </div>
                     <!--Bio Title and Text-->
-                    <h2><i class="ph-book-bold about-me-icon" aria-hidden="true"></i> Biography</h2>
                     <p>London based British musician, Nick Lennon, has been bringing his passion for drumming, performance
                         and entertainment to stage for over 10 years. His technical abilities are the culmination of drum
                         lessons from the age of 8, achieving a degree in Contemporary Music Performance and private study
@@ -151,13 +154,13 @@
                         industry to make the lessons relevant.
                     </p>
                     <!--CV Download Text and Link-->
-                    <p class="cv-download mb-0">Looking for more information or for a copy of Nick's CV then please, <a
-                            data-bs-toggle="modal"
-                        data-bs-target="#contact-modal" aria-label="Go to contact information">Get In Touch! <i class="fas fa-mobile-alt"
-                                aria-hidden="true"></i></a>
+                    <p class="mb-0">Looking for more information about Nick's experience, education or CV then please, 
+                        <a class="download-link" data-bs-toggle="modal" data-bs-target="#contact-modal" aria-label="Go to contact information">
+                            Get In Touch 
+                            <i class="fas fa-mobile-alt"aria-hidden="true"></i>
+                        </a>
                     </p>
                 </div>
-                
             </div>
         </div>
     </section>
@@ -167,7 +170,7 @@
         <div class="row g-0">
             <!--Section Title-->
             <div class="col-12">
-                <h2>Career Highlights</h2>
+                <h2>Previous Work</h2>
             </div>
         </div>
         <div id="vertical-timeline-creator">
@@ -325,9 +328,11 @@
                         </div>
                         <div class="col-12 col-md-6">
                             <div class="get-in-touch">
-                                <p class="cv-download">
-                                Click here to <a data-bs-toggle="modal" data-bs-target="#contact-modal" aria-label="Go to contact information">Get In Touch <i class="fas fa-mobile-alt"
-                                aria-hidden="true"></i></a>
+                                <p> Click here to 
+                                    <a class="download-link" data-bs-toggle="modal" data-bs-target="#contact-modal" aria-label="Go to contact information">
+                                        Get In Touch 
+                                        <i class="fas fa-mobile-alt" aria-hidden="true"></i>
+                                    </a>
                                 </p>
                                 <p>or</p>
                                 <p>Email Me at</p>
